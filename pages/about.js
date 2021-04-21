@@ -1,23 +1,18 @@
+import styles from '../styles/About.module.css'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
 
-export default function Home() {
-  return (
-    <>
-     
-
-      <h1 className={styles.title}> Homepage</h1>
-
+const About = () => {
+    return ( 
+        <div>
+             <Head>
+        <title>About us</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+            <h1 className={styles.title}>About Us</h1>
       <p className={styles.text}> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Leeriest sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      <Link href="/blogs">
-        <a className={styles.btn}>
-          See our blogs
-  </a>
-      </Link>
 
-
-
-    </>
-  )
+        </div>
+     );
 }
+ 
+export default About;
